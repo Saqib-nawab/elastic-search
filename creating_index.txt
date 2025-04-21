@@ -1,0 +1,26 @@
+1. pulling the docker image using the following cli command afte running the docker desktp 
+
+command: "docker run -p 9200:9200 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:8.12.2"
+
+// Docker command to stop all docker containers "docker stop $(docker ps -q)" and to remove any container image "docker rm $(docker ps -aq)
+" normally incase of any port conflicts
+// Docker command to stop a certain container "docker stop container_name"
+// or you can close/delete/stop a container manually in docker desktop in mac
+
+// or via using container id as 
+docker kill <container_id>
+docker rm <container_id>
+
+
+// findings
+ my first experience of scrapi is that i find it very different compared to the old school scrapping or automation tools, different in sense that it's very powerful like it's ability to open multiple instances asynchronously and independently
+
+ another thing that i observed is that most of the data that is scrapping intended is confidential and you're not allowed to have it on your end and with that being in mind you need proper planning to scrap any data like private IP for security and the API should be geologically variable as well unless it makes no sense to have a private API
+
+ websites having the authentication step is fairly difficult becasue i once tried to do automated facebook posts and couldn't bypass it understandly for facebook is a big application
+
+ understanding every attribute in setting.py is very useful
+
+ you need to take in account your machine performance
+
+ baqi i am yet to write a fully functional pipeline 

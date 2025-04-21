@@ -1,0 +1,22 @@
+# Scrapy junk
+*.pyc
+__pycache__/
+.scrapy/
+
+# VS Code
+.vscode/
+
+# Credentials
+context.json
+
+# Output files
+quotes.json
+*.log
+
+# Environment
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
